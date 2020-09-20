@@ -1,0 +1,35 @@
+.entry {
+	display: grid;
+	gap: var( --eatsGap );
+	grid-template-areas:
+		"image"
+		"content";
+	margin-bottom: var( --eatsGap );
+
+	@media ( min-width: 740px ) {
+		grid-template-areas:
+			"image content";
+		grid-template-columns: 50% 50%;
+	}
+
+	@media ( min-width: $width ) {
+		grid-template-columns: 65% 35%;
+	}
+}
+
+.entry__meta {
+	color: var( --eatsGrey );
+}
+
+.entry__image {
+	grid-area: "image";
+	width: 100%;
+}
+
+.entry__content {
+	grid-area: "content";
+	
+	@media ( min-width: $width ) {
+		padding-top: var( --eatsGap );
+	}
+}

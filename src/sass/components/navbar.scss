@@ -1,0 +1,12 @@
+.navbar {
+	display: none;
+
+	.no-js &,
+	&.is-open {
+		display: block;
+	}
+
+	@media ( min-width: $width ) {
+		display: block;
+	}
+}

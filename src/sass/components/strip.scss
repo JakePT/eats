@@ -1,0 +1,12 @@
+.strip {
+	background: var(--eatsBlueLight);
+	color: var(--eatsWhite);
+
+	a {
+		color: inherit;
+	}
+}
+
+.strip--dark {
+	background-color: var(--eatsBlue);
+}

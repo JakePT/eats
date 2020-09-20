@@ -1,0 +1,43 @@
+/*
+Theme Name: Eats
+Theme URI: https://10up.com/
+Author: Jacob Peattie
+Author URI: https://github.com/JakePT
+Description: Theme submission for 10up Senior Front End Engineering Technical Challenge
+Version: 0.0.1
+Tested up to: 5.5
+Requires PHP: 5.6
+Text Domain: eats
+*/
+
+$width: 1136px;
+
+:root {
+	--eatsGap: 20px;
+	--eatsOrange: #CC4B00;
+	--eatsYellow: #FFC700;
+	--eatsBlueWhite: #5488c8;
+	--eatsBlueLight: #006EF5;
+	--eatsBlue: #004EAE;
+	--eatsBlueDark: #013371;
+	--eatsGrey: #767676;
+	--eatsGreyDark: #333333;
+	--eatsWhite: #FFFFFF;
+}
+
+/* Base styles. */
+@import "base/base";
+
+/* Components */
+@import "components/container";
+@import "components/content";
+@import "components/entry";
+@import "components/header";
+@import "components/logo";
+@import "components/main";
+@import "components/menu";
+@import "components/navbar";
+@import "components/read-more";
+@import "components/search-form";
+@import "components/strip";
+@import "components/toggle";

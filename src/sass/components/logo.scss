@@ -1,0 +1,32 @@
+.logo {
+	display: flex;
+	align-items: center;
+	vertical-align: bottom;
+	text-decoration: none;
+
+	&:hover {
+		color: var( --eatsYellow );
+	}
+}
+
+.logo__icon {
+	display: block;
+	width: 52px;
+	height: 52px;
+	fill: currentColor;
+}
+
+.logo__text {
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	left: -9999px;
+	padding-left: calc( var( --eatsGap ) / 2 );
+	font-weight: bold;
+	font-size: 18px;
+
+	@media ( min-width: $width ) {
+		clip: none;
+		position: static;
+	}
+}

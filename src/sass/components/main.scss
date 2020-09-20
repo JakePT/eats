@@ -1,0 +1,8 @@
+.main {
+	padding: var( --eatsGap );
+
+	@media ( min-width: $width ) {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}

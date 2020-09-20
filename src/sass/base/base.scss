@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font: normal normal 14px/1.5 'Raleway', sans-serif;
+	background-color: var( --eatsWhite );
+	color: var( --eatsGreyDark );
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: var( --eatsGap );
+}
+
+a {
+	color: var( --eatsOrange );
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

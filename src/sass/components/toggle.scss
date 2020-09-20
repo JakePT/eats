@@ -1,0 +1,39 @@
+.toggle {
+	-webkit-appearance: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0;
+	padding: 0 var(--eatsGap);
+	border: none;
+	background: transparent;
+	color: inherit;
+
+	&:hover,
+	&:focus,
+	&.is-open {
+		background-color: var(--eatsBlue);
+	}
+}
+
+.toggle__icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+.toggle__icon--open {
+	.is-open > & {
+		display: none;
+	}
+}
+
+.toggle__icon--close {
+	display: none;
+
+	.is-open > & {
+		display: block;
+	}
+}
