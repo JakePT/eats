@@ -14,6 +14,10 @@ if ( ! has_nav_menu( 'primary' ) ) {
 
 <div class="strip strip--dark">
 	<div class="container">
+		<h1 class="screen-reader-text">
+			<?php echo esc_html( wp_get_nav_menu_name( 'primary' ) ); ?>
+		</h1>
+
 		<?php
 		wp_nav_menu(
 			[

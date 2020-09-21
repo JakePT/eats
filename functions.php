@@ -48,6 +48,19 @@ function eats_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'eats_enqueue_assets' );
 
 /**
+ * Output skip link.
+ *
+ * @return void
+ */
+function eats_skip_link() {
+	printf(
+		'<a class="screen-reader-text" href="#main">%s</a>',
+		esc_html__( 'Skip to main content', 'eats' )
+	);
+}
+add_action( 'wp_body_open', 'eats_skip_link' );
+
+/**
  * Get the SVG markup for an icon.
  *
  * @param string $icon  Icon name.

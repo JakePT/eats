@@ -17,16 +17,15 @@
 }
 
 .logo__text {
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute;
-	left: -9999px;
-	padding-left: calc( var( --eatsGap ) / 2 );
-	font-weight: bold;
-	font-size: 18px;
+	@extend .screen-reader-text;
 
 	@media ( min-width: $width ) {
-		clip: none;
-		position: static;
+		.logo & {
+			clip: none;
+			position: static;
+			padding-left: calc( var( --eatsGap ) / 2 );
+			font-weight: bold;
+			font-size: 18px;
+		}
 	}
 }

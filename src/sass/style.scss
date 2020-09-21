@@ -28,8 +28,11 @@ $width: 1136px;
 /* Base styles. */
 @import "base/base";
 
+/* Utilities */
+@import "Utilities/container";
+@import "Utilities/screen-reader-text";
+
 /* Components */
-@import "components/container";
 @import "components/content";
 @import "components/entry";
 @import "components/header";

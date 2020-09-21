@@ -1,0 +1,19 @@
+.screen-reader-text {
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	left: -9999px;
+	z-index: 100000;
+
+	&:focus {
+		clip: auto;
+		left: 5px;
+		top: 5px;
+		width: auto;
+		height: auto;
+		padding: 0.5em 1.5em;
+		border-radius: 3px;
+		background: var(--eatsBlue);
+		color: #FFF;
+	}
+}
