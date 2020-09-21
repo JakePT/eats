@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<main id="main" class="main">
+<main id="main" class="main" tabindex="-1">
 	<div class="container">
 		<h1 class="screen-reader-text">
 			<?php the_archive_title(); ?>
